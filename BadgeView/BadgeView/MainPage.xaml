@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BadgeView"
+             x:Class="BadgeView.MainPage"
+             xmlns:badge ="clr-namespace:Syncfusion.XForms.BadgeView;assembly=Syncfusion.SfBadgeView.XForms">
+
+    <badge:SfBadgeView BadgeText="&#xe702;" HorizontalOptions="Center" VerticalOptions="Center">
+            <Image Source="People_Circle1.png"   VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           HeightRequest="100" WidthRequest="100"/>
+            <badge:SfBadgeView.BadgeSettings>
+                <badge:BadgeSetting FontSize="15" Offset="-10,5" FontAttributes="Bold">
+                    <badge:BadgeSetting.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="BadgeViewFont.ttf#FONT Sf Badge view" />
+                            <On Platform="UWP" Value="Assets/BadgeViewFont.ttf#FONT Sf Badge view" />
+                            <On Platform="iOS" Value="BadgeViewFont.ttf" />
+                        </OnPlatform>
+                    </badge:BadgeSetting.FontFamily>
+                </badge:BadgeSetting>
+            </badge:SfBadgeView.BadgeSettings>
+        </badge:SfBadgeView>
+
+</ContentPage>
