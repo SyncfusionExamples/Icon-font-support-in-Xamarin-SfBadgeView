@@ -4468,26 +4468,26 @@ namespace BadgeView.Droid
 			// aapt resource value: 0x7f020071
 			public const int avd_hide_password = 2130837617;
 			
-			// aapt resource value: 0x7f020151
-			public const int avd_hide_password_1 = 2130837841;
-			
 			// aapt resource value: 0x7f020152
-			public const int avd_hide_password_2 = 2130837842;
+			public const int avd_hide_password_1 = 2130837842;
 			
 			// aapt resource value: 0x7f020153
-			public const int avd_hide_password_3 = 2130837843;
+			public const int avd_hide_password_2 = 2130837843;
+			
+			// aapt resource value: 0x7f020154
+			public const int avd_hide_password_3 = 2130837844;
 			
 			// aapt resource value: 0x7f020072
 			public const int avd_show_password = 2130837618;
 			
-			// aapt resource value: 0x7f020154
-			public const int avd_show_password_1 = 2130837844;
-			
 			// aapt resource value: 0x7f020155
-			public const int avd_show_password_2 = 2130837845;
+			public const int avd_show_password_1 = 2130837845;
 			
 			// aapt resource value: 0x7f020156
-			public const int avd_show_password_3 = 2130837846;
+			public const int avd_show_password_2 = 2130837846;
+			
+			// aapt resource value: 0x7f020157
+			public const int avd_show_password_3 = 2130837847;
 			
 			// aapt resource value: 0x7f020073
 			public const int design_bottom_navigation_item_background = 2130837619;
@@ -5134,11 +5134,11 @@ namespace BadgeView.Droid
 			// aapt resource value: 0x7f020149
 			public const int notification_icon_background = 2130837833;
 			
-			// aapt resource value: 0x7f02014f
-			public const int notification_template_icon_bg = 2130837839;
-			
 			// aapt resource value: 0x7f020150
-			public const int notification_template_icon_low_bg = 2130837840;
+			public const int notification_template_icon_bg = 2130837840;
+			
+			// aapt resource value: 0x7f020151
+			public const int notification_template_icon_low_bg = 2130837841;
 			
 			// aapt resource value: 0x7f02014a
 			public const int notification_tile_bg = 2130837834;
@@ -5147,13 +5147,16 @@ namespace BadgeView.Droid
 			public const int notify_panel_notification_icon_bg = 2130837835;
 			
 			// aapt resource value: 0x7f02014c
-			public const int People_Circle1 = 2130837836;
+			public const int People = 2130837836;
 			
 			// aapt resource value: 0x7f02014d
-			public const int tooltip_frame_dark = 2130837837;
+			public const int People_Circle1 = 2130837837;
 			
 			// aapt resource value: 0x7f02014e
-			public const int tooltip_frame_light = 2130837838;
+			public const int tooltip_frame_dark = 2130837838;
+			
+			// aapt resource value: 0x7f02014f
+			public const int tooltip_frame_light = 2130837839;
 			
 			static Drawable()
 			{
