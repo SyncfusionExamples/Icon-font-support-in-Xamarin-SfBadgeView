@@ -1,4 +1,4 @@
-# BadgeView-Icon
+# How to use icon font in Xamarin SfBadgeView
 This demo explains how to use font icon in Xamarin badge view. It has been achieved by setting desired icon text as BadgeText of badge view and provide a corresponding icon fontfamily to the FontFamily property pf BadgeSetting as per in below code snippet 
 
 ```
