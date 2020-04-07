@@ -1,4 +1,4 @@
-# How to use icon font in Xamarin SfBadgeView
+# How to use icon font in Xamarin.Forms badge view (SfBadgeView)
 This demo explains how to use font icon in Xamarin badge view. Please refer KB links for more details,
 
 [How to add a custom icon to the badge in Xamarin.Forms badge view (SfBadgeView)](https://www.syncfusion.com/kb/11338/?utm_medium=listing&utm_source=github-examples)
