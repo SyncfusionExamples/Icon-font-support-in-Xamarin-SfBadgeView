@@ -15,7 +15,7 @@
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="Android" Value="BadgeViewFont.ttf#FONT Sf Badge view" />
                         <On Platform="UWP" Value="Assets/BadgeViewFont.ttf#FONT Sf Badge view" />
-                        <On Platform="iOS" Value="BadgeViewFont.ttf" />
+                        <On Platform="iOS" Value="FONT Sf Badge view" />
                     </OnPlatform>
                 </badge:BadgeSetting.FontFamily>
             </badge:BadgeSetting>
