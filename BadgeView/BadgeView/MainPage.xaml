@@ -10,14 +10,8 @@
                            HorizontalOptions="Center"
                            HeightRequest="70" WidthRequest="70"/>
         <badge:SfBadgeView.BadgeSettings>
-            <badge:BadgeSetting Offset="-10,-10" Stroke="White" StrokeWidth="2" BadgePosition="BottomRight">
-                <badge:BadgeSetting.FontFamily>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="Android" Value="BadgeViewFont.ttf#FONT Sf Badge view" />
-                        <On Platform="UWP" Value="Assets/BadgeViewFont.ttf#FONT Sf Badge view" />
-                        <On Platform="iOS" Value="FONT Sf Badge view" />
-                    </OnPlatform>
-                </badge:BadgeSetting.FontFamily>
+            <badge:BadgeSetting Offset="-10,-10" Stroke="White" StrokeWidth="2" 
+                                FontFamily="BadgeViewFont.ttf" BadgePosition="BottomRight">
             </badge:BadgeSetting>
         </badge:SfBadgeView.BadgeSettings>
     </badge:SfBadgeView>

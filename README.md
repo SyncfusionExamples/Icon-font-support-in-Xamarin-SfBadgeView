@@ -3,57 +3,51 @@ This demo explains how to use font icon in Xamarin badge view. Please refer KB l
 
 [How to add a custom icon to the badge in Xamarin.Forms badge view (SfBadgeView)](https://www.syncfusion.com/kb/11338/?utm_medium=listing&utm_source=github-examples)
 
-It has been achieved by setting desired icon text as BadgeText of badge view and provide a corresponding icon fontfamily to the FontFamily property pf BadgeSetting as per in below code snippet 
+It has been achieved by setting desired custom view icon text as BadgeText  property of badge view and provide a corresponding icon font family to the FontFamily property of BadgeSetting as shown in the  following code snippet.
+
+**Step 1:** Add the custom font file to your shared project and mark it as embedded resource.
+
+![Embedded resource badge view custom font](OutputImage/EmbeddedCustomFont.PNG)
+
+**Step 2:** Add ExportFont attribute in your shared project as per in the below code sample.
+
+[C#]
+
+**App.xaml.cs**
+
+```
+[assembly: ExportFont("BadgeViewFont.ttf")]
+namespace BadgeView
+{
+    public partial class App : Application
+    {
+      …
+    }
+}
 
 ```
 
+**Step 3:** Initialize the SfBadgeView control with setting the BadgeText  property of SfBadgeView as desired custom view icon text and provide a corresponding icon font family to the FontFamily property of BadgeSetting as per in the below code sample.
+
+[XAML]
+
+```
     <badge:SfBadgeView BadgeText="&#xe702;" HorizontalOptions="Center" VerticalOptions="Center">
         <Image Source="People.png"   VerticalOptions="Center"
                            HorizontalOptions="Center"
                            HeightRequest="70" WidthRequest="70"/>
         <badge:SfBadgeView.BadgeSettings>
-            <badge:BadgeSetting Offset="-10,-10" Stroke="White" StrokeWidth="2" BadgePosition="BottomRight">
-                <badge:BadgeSetting.FontFamily>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="Android" Value="BadgeViewFont.ttf#FONT Sf Badge view" />
-                        <On Platform="UWP" Value="Assets/BadgeViewFont.ttf#FONT Sf Badge view" />
-                        <On Platform="iOS" Value="BadgeViewFont.ttf" />
-                    </OnPlatform>
-                </badge:BadgeSetting.FontFamily>
+            <badge:BadgeSetting Offset="-10,-10" Stroke="White" StrokeWidth="2" 
+                                FontFamily="BadgeViewFont.ttf" BadgePosition="BottomRight">
             </badge:BadgeSetting>
         </badge:SfBadgeView.BadgeSettings>
     </badge:SfBadgeView>
 
 ```
 
-The following steps describe how to add a custom font file in the platform-specific projects.
+![Output image of badge view custom font](OutputImage/BadgeCustomFont.jpg)
 
-## Android
-Add a custom font file in the Assets folder and set Build Action to AndroidAsset for the font file.
-
-## iOS
-
-**Step 1:** Add a custom font file in the Resources folder and set Build Action to BundleResource. Then, ensure that the copy to output directory is set to AlwaysCopy.
-
-**Step 2:** Add a custom font file name in the info.plist file as demonstrated in the following code sample.
-
-```
-
-<plist version="1.0">
-<dict>
-    …
-    <key>UIAppFonts</key>
-    <array>
-    <string>BadgeViewFont.ttf</string>
-    </array>
-</dict> 
-
-```
-
-## UWP
-Add a custom font file in the Assets folder and set Build Action to Content.
-
-See also:
+**See also:**
 
 [How can I customize the badge view position?](https://help.syncfusion.com/xamarin/badge-view/position-customization)
 

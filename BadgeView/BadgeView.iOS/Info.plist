@@ -34,9 +34,5 @@
     <string>BadgeView</string>
     <key>XSAppIconAssets</key>
     <string>Assets.xcassets/AppIcon.appiconset</string>
-    <key>UIAppFonts</key>
-    <array>
-    <string>BadgeViewFont.ttf</string>
-    </array>
 </dict>
 </plist>
