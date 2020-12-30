@@ -2,7 +2,6 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-[assembly: ExportFont("BadgeViewFont.ttf")]
 namespace BadgeView
 {
     public partial class App : Application

@@ -1,33 +1,28 @@
 # How to use icon font in Xamarin.Forms badge view (SfBadgeView)
-This demo explains how to use font icon in Xamarin badge view. Please refer KB links for more details,
+This demo explains how to add a custom icon to the badge using the font icon in the Xamarin badge view control. Please refer KB links for more details,
 
 [How to add a custom icon to the badge in Xamarin.Forms badge view (SfBadgeView)](https://www.syncfusion.com/kb/11338/?utm_medium=listing&utm_source=github-examples)
 
 It has been achieved by setting desired custom view icon text as BadgeText  property of badge view and provide a corresponding icon font family to the FontFamily property of BadgeSetting as shown in the  following code snippet.
 
-**Step 1:** Add the custom font file to your shared project and mark it as embedded resource.
+**Step 1:** Add the custom font file to your Xamarin.Forms shared project and mark it as an embedded resource.
 
 ![Embedded resource badge view custom font](OutputImage/EmbeddedCustomFont.PNG)
 
-**Step 2:** Add ExportFont attribute in your shared project as per in the below code sample.
+**Step 2:** Register the font file with the assembly, in a file such as AssemblyInfo.cs using the ExportFont attribute in your shared project as shown in the following code example. An optional alias can also be specified.
 
 [C#]
 
-**App.xaml.cs**
+**AssemblyInfo.cs**
 
 ```
-[assembly: ExportFont("BadgeViewFont.ttf")]
-namespace BadgeView
-{
-    public partial class App : Application
-    {
-      …
-    }
-}
+using Xamarin.Forms;
+
+[assembly: ExportFont("BadgeViewFont.ttf", Alias = "BadgeViewFont")]
 
 ```
 
-**Step 3:** Initialize the SfBadgeView control with setting the BadgeText  property of SfBadgeView as desired custom view icon text and provide a corresponding icon font family to the FontFamily property of BadgeSetting as per in the below code sample.
+**Step 3:** Initialize the SfBadgeView control by setting the BadgeText property as the desired custom view icon text and provide a corresponding icon font family to the FontFamily property of BadgeSetting as shown in the following code sample.
 
 [XAML]
 
