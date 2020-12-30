@@ -7,7 +7,7 @@ It has been achieved by setting desired custom view icon text as BadgeText  prop
 
 **Step 1:** Add the custom font file to your Xamarin.Forms shared project and mark it as an embedded resource.
 
-![Embedded resource badge view custom font](OutputImage/EmbeddedCustomFont.PNG)
+![Embedded resource badge view custom font](OutputImage/EmbeddedCustomFont.png)
 
 **Step 2:** Register the font file with the assembly, in a file such as AssemblyInfo.cs using the ExportFont attribute in your shared project as shown in the following code example. An optional alias can also be specified.
 
