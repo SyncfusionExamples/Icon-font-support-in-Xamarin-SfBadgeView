@@ -1,6 +1,6 @@
 # Icon font support in Xamarin SfBadgeView
 
-This repository contains sample for how to add a custom icon to the badge using the font icon in the [Syncfusion Xamarin.Forms Badge View](https://help.syncfusion.com/xamarin/badge-view/getting-started) control.
+This repository contains sample to add a custom icon to the badge using the font icon in the [Syncfusion Xamarin.Forms Badge View](https://help.syncfusion.com/xamarin/badge-view/getting-started) control.
 
 Please refer the KB through this [link](https://www.syncfusion.com/kb/11338/how-to-add-a-custom-icon-to-the-badge-in-xamarin-forms-badge-view-sfbadgeview).
 
