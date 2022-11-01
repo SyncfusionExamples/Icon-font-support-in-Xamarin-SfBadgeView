@@ -1,57 +1,52 @@
-# How to use icon font in Xamarin.Forms badge view (SfBadgeView)
-This demo explains how to add a custom icon to the badge using the font icon in the Xamarin badge view control. Please refer KB links for more details,
+# Icon font support in Xamarin SfBadgeView
 
-[How to add a custom icon to the badge in Xamarin.Forms badge view (SfBadgeView)](https://www.syncfusion.com/kb/11338/?utm_medium=listing&utm_source=github-examples)
+This repository contains sample to add a custom icon to the badge using the font icon in the [Syncfusion Xamarin.Forms Badge View](https://help.syncfusion.com/xamarin/badge-view/getting-started) control.
 
-It has been achieved by setting desired custom view icon text as BadgeText  property of badge view and provide a corresponding icon font family to the FontFamily property of BadgeSetting as shown in the  following code snippet.
+Please refer the KB through this [link](https://www.syncfusion.com/kb/11338/how-to-add-a-custom-icon-to-the-badge-in-xamarin-forms-badge-view-sfbadgeview).
 
-**Step 1:** Add the custom font file to your Xamarin.Forms shared project and mark it as an embedded resource.
+## Syncfusion controls:
 
-![Embedded resource badge view custom font](OutputImage/EmbeddedCustomFont.png)
+This project used the following Syncfusion control(s):
+* [SfBadgeView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-badge-view)
 
-**Step 2:** Register the font file with the assembly, in a file such as AssemblyInfo.cs using the ExportFont attribute in your shared project as shown in the following code example. An optional alias can also be specified.
+## Supported platforms
 
-[C#]
+| Platforms | Supported versions |
+| --------- | ------------------ |
+| Android   | API level 21 and later versions |
+| iOS | iOS 9.0 and later versions |
+| UWP | Windows 10 devices |
 
-**AssemblyInfo.cs**
+## Requirements to run the sample
 
-```
-using Xamarin.Forms;
+* [Visual Studio](https://visualstudio.microsoft.com/downloads/) or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/)
 
-[assembly: ExportFont("BadgeViewFont.ttf", Alias = "BadgeViewFont")]
+Refer to the following link for more details - [System Requirements](https://help.syncfusion.com/xamarin/system-requirements)
 
-```
+## How to run the sample
 
-**Step 3:** Initialize the SfBadgeView control by setting the BadgeText property as the desired custom view icon text and provide a corresponding icon font family to the FontFamily property of BadgeSetting as shown in the following code sample.
+1. Clone the sample and open it in Visual Studio.
 
-[XAML]
+   *Note: If you download the sample using the "Download ZIP" option, right-click it, select Properties, and then select Unblock.*
+   
+2. Register your license key in the App.xaml.cs file as demonstrated in the following code.
 
-```
-    <badge:SfBadgeView BadgeText="&#xe702;" HorizontalOptions="Center" VerticalOptions="Center">
-        <Image Source="People.png"   VerticalOptions="Center"
-                           HorizontalOptions="Center"
-                           HeightRequest="70" WidthRequest="70"/>
-        <badge:SfBadgeView.BadgeSettings>
-            <badge:BadgeSetting Offset="-10,-10" Stroke="White" StrokeWidth="2" 
-                                FontFamily="BadgeViewFont.ttf" BadgePosition="BottomRight">
-            </badge:BadgeSetting>
-        </badge:SfBadgeView.BadgeSettings>
-    </badge:SfBadgeView>
+		public App()
+		{
+			//Register Syncfusion license
+			Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
+	
+			InitializeComponent();
+	
+			MainPage = new App1.MainPage();
+		}
+		
+	Refer to this [link](https://help.syncfusion.com/xamarin/licensing/overview) for more details.
+	
+3. Clean and build the application.
 
-```
+4. Run the application.
 
-![Output image of badge view custom font](OutputImage/BadgeCustomFont.jpg)
+## License
 
-**See also:**
-
-[How can I customize the badge view position?](https://help.syncfusion.com/xamarin/badge-view/position-customization)
-
-[How can I customize the badge in Xamarin.Forms SfBadgeView?](https://help.syncfusion.com/xamarin/badge-view/badge-customization)
-
-[How can I add badge icon in badge view?](https://help.syncfusion.com/xamarin/badge-view/predefined-symbols)
-
-Also refer our [feature tour](https://www.syncfusion.com/xamarin-ui-controls/xamarin-badge-view) page to know more features available in our Badge View.
-
-## <a name="troubleshooting"></a>Troubleshooting ##
-### Path too long exception
-If you are facing path too long exception when building this example project, close Visual Studio and rename the repository to short and build the project.
+Syncfusion has no liability for any damage or consequence that may arise by using or viewing the samples. The samples are for demonstrative purposes, and if you choose to use or access the samples, you agree to not hold Syncfusion liable, in any form, for any damage that is related to use, for accessing, or viewing the samples. By accessing, viewing, or seeing the samples, you acknowledge and agree Syncfusion’s samples will not allow you seek injunctive relief in any form for any claim related to the sample. If you do not agree to this, do not view, access, utilize, or otherwise do anything with Syncfusion’s samples.
